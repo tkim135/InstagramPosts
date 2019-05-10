@@ -2,6 +2,8 @@
 
 import csv
 import instaloader
+import langdetect
+import urllib.request
 from langdetect import detect
 from datetime import datetime, timedelta
 
@@ -24,11 +26,15 @@ with open(csvFile, 'a') as csvFile:
                         profile = post.owner_profile
                         if profile not in profiles:
                             profiles.append(profile)
-                            #scrape posts on profile
-                            postNum += 1
-                            row = [postNum, post.date_local, post.caption, 
-                                post.url, post.tagged_users, post.likes, post.comments, post.location]
-                            writer.writerow(row)
+                            print(profile)
+                            for nupost in profile.get_posts():
+                            	postNum += 1
+                            	imagename = "image{}.jpg".format(postNum)
+                            	urllib.request.urlretrieve(nupost.url, "img/{}".format(imagename))
+                            	row = [postNum, nupost.date_local, nupost.caption, 
+                                	imagename, nupost.tagged_users, nupost.likes, 
+                                	nupost.comments, nupost.location]
+                            	writer.writerow(row)
                             
                 except langdetect.lang_detect_exception.LangDetectException:
                     continue
