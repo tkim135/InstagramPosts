@@ -2,20 +2,20 @@
 
 <b>cleaner.py</b>			For cleaning the scraped data
 
-post-data.csv			Csv for storing the data
+<b>post-data.csv</b>			Csv for storing the data
 
-rnn_torch.ipynb			File containing both the CNN and the RNN, connecting them into full NN
+<b>rnn_torch.ipynb</b>			File containing both the CNN and the RNN, connecting them into full NN
 
-text_rnn.py         Individual RNN file
+<b>text_rnn.py</b>         Individual RNN file
 
-data_utils.py			  Setting up Dataloader for CNN
+<b>data_utils.py</b>			  Setting up Dataloader for CNN
 
-pseudocode.py			  Scraper with threading
+<b>pseudocode.py</b>			  Scraper with threading
 
-rnn_torch_validate.ipynb	    similar to rnn_torch except used for validation purpose
+<b>rnn_torch_validate.ipynb</b>	    similar to rnn_torch except used for validation purpose
 
-clean-data.csv			        preliminary version of data
+<b>clean-data.csv</b>			        preliminary version of data
 
-newscraper.py			        Scraper without threading
+<b>newscraper.py</b>			        Scraper without threading
 
-pytorch_resnet.py		       Individual CNN file using resnet50
+<b>pytorch_resnet.py</b>		       Individual CNN file using resnet50
