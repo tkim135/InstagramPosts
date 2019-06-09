@@ -1,6 +1,6 @@
 # InstagramPosts
 
-cleaner.py			For cleaning the scraped data
+<b>cleaner.py</b>			For cleaning the scraped data
 
 post-data.csv			Csv for storing the data
 
